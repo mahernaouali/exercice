@@ -1,0 +1,367 @@
+{
+	"info": {
+		"_postman_id": "af9589b2-a0ba-4740-94f5-ea9102e01b94",
+		"name": "cardGameRequest",
+		"description": "Differents requets using Card Game Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Initial Card List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/cards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"cards"
+					]
+				},
+				"description": "Returns the list of cards initialized at the application start"
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Deck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get List Decks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/player/new/{pseudo}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"player",
+						"new",
+						"{pseudo}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Players List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"player",
+						"new",
+						"maher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Player's Cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/player/listCards/{idPlayer}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"player",
+						"listCards",
+						"{idPlayer}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/game/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"player",
+						"new",
+						"maher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/game/delete/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"game",
+						"delete",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Games List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"player",
+						"new",
+						"maher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Deck To Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/game/{idGame}/addDeck/{idDeck}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"game",
+						"{idGame}",
+						"addDeck",
+						"{idDeck}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Player To Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/game/{idGame}/addPlayer/{idPlayer}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"game",
+						"{idGame}",
+						"addPlayer",
+						"{idPlayer}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Player from Game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/game/{idGame}/removePlayer/{idPlayer}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"game",
+						"{idGame}",
+						"removePlayer",
+						"{idPlayer}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shuffle Game Deck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/game/shuffle/{idGame}/deck/{idDeck}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"game",
+						"shuffle",
+						"{idGame}",
+						"deck",
+						"{idDeck}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deal Card To Player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/game/dealCard/{idGame}/deck/{idDeck}/player/{idPlayer}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"game",
+						"dealCard",
+						"{idGame}",
+						"deck",
+						"{idDeck}",
+						"player",
+						"{idPlayer}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Game Playes Sorted Desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api/game/listPlayerDesc/{idGame}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"player",
+						"new",
+						"maher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Deck Remaining Cards Grouped And Sorted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8181/api//api/game/remainingCards/{idGame}/{idDeck}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"",
+						"api",
+						"game",
+						"remainingCards",
+						"{idGame}",
+						"{idDeck}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
