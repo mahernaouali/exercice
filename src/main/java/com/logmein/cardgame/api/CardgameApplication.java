@@ -21,7 +21,9 @@ public class CardgameApplication implements ApplicationRunner {
 		SpringApplication.run(CardgameApplication.class, args);
 	}
 
-	// This part is used to create the cards for the first time.
+	/**
+	 *  This part is used to create the cards for the first time.
+	 */
 	@Override
 	public void run(ApplicationArguments args) throws Exception
 

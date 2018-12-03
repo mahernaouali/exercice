@@ -94,7 +94,7 @@ public class GameResource {
 	 * @param idGame
 	 * @param idPlayer
 	 */
-	@RequestMapping("/api/game/{idGame}/removePlayer/{idPlayer}")
+	@RequestMapping("			")
 	public void removePlayer(@PathVariable long idGame, @PathVariable long idPlayer) {
 
 		Optional<Game> game = gameRepository.findById(idGame);
